@@ -88,6 +88,12 @@ h2::after {
 
 /* ----- PARAGRAPHS ----- */
 
+a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 /* ----- ICONS ----- */
 
 /* *********************************************** */
@@ -100,7 +106,39 @@ h2::after {
 /* HEADER */
 /* ----------------------------------------------- */
 
+.myheader {
+    min-height: 112px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: transparent;
+    z-index: 1000;
+    width: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.header-branding {
+    padding: 0;
+    display: flex;
+    flex: 0 0 auto;
+    justify-content: flex-start;
+}
+
+.header-branding-img {
+    height: 72px;
+}
+
 /* ----- NAVIGATION ----- */
+
+.main-nav {
+    display: block;
+    white-space: nowrap;
+    line-height: 1em;
+    text-align: right;
+    pointer-events: auto;
+}
 
 /* ----------------------------------------------- */
 /* HOME-INTRO */
